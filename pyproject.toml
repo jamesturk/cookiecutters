@@ -22,7 +22,8 @@ projname = 'projname.cli:cli'
 
 [tool.poetry.dependencies]
 python = "^3.10"
-click = "^8"
+typer = "^0.7.0"
+structlog = "^22.3.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7"
@@ -32,8 +33,7 @@ mkdocs-material = "^9"
 ruff = "^0.0.257"
 # mkdocstrings = "^0.19.0"
 # mkdocstrings-python = "^0.8.3"
-
-#mypy = "^0.900"
+# mypy = "^0.900"
 
 # [tool.mypy]
 # disallow_untyped_defs = true
