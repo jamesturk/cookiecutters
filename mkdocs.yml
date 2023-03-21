@@ -1,0 +1,57 @@
+site_name: projname
+site_url: https://jamesturk.github.io/projname/
+site_author: James Turk
+site_description: shortdesc
+copyright: Copyright &copy; 2023 James Turk
+repo_url: https://github.com/jamesturk/projname
+repo_name: jamesturk/projname
+edit_uri: edit/main/docs/
+
+theme:
+  # logo: assets/white-spatula.svg
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+  features:
+    #- navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+markdown_extensions:
+  - admonition
+  - def_list
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences
+  - mkdocs-click
+  - toc:
+      permalink: true
+plugins:
+- search
+
+extra_css:
+  - assets/extra.css
+nav:
+  - 'index.md'
+  - Reference:
+    - 'cli.md'
+    - 'reference.md'
+  - About:
+    - 'contributing.md'
+    - 'code_of_conduct.md'
+    - 'changelog.md'
