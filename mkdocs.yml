@@ -1,10 +1,10 @@
-site_name: projname
-site_url: https://jamesturk.github.io/projname/
-site_author: James Turk
+site_name: {{ cookiecutter.project_slug }}
+site_url: https://{{ cookiecutter.github_user }}.github.io/{{ cookiecutter.project_slug }}/
+site_author: {{ cookiecutter.author }}
 site_description: shortdesc
-copyright: Copyright &copy; 2023 James Turk
-repo_url: https://github.com/jamesturk/projname
-repo_name: jamesturk/projname
+copyright: Copyright &copy; 2023 {{ cookiecuter.author }}
+repo_url: https://github.com/{{ cookiecutter.github_user}}/{{ cookiecutter.project_slug}}
+repo_name: {{ cookiecutter.github_user }}/{{ cookiecutter.project_slug }}
 edit_uri: edit/main/docs/
 
 theme:
@@ -42,16 +42,16 @@ markdown_extensions:
   - toc:
       permalink: true
 plugins:
-- search
+  - search
 
 extra_css:
   - assets/extra.css
 nav:
-  - 'index.md'
+  - "index.md"
   - Reference:
-    - 'cli.md'
-    - 'reference.md'
+      - "cli.md"
+      - "reference.md"
   - About:
-    - 'contributing.md'
-    - 'code_of_conduct.md'
-    - 'changelog.md'
+      - "contributing.md"
+      - "code_of_conduct.md"
+      - "changelog.md"

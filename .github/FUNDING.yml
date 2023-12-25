@@ -1,1 +1,1 @@
-github: [jamesturk]
+github: [{ { cookiecutter.github_user } }]

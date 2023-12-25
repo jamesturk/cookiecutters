@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "projname"
+name = "{{ cookiecutter.project_slug }}"
 version = "0.1.0"
 description = "shortdesc"
-authors = ["James Turk <dev@jamesturk.net>"]
+authors = ["{{ cookiecutter.author }} <{{cookiecutter.author_email}}>"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/jamesturk/projname/"
-documentation = "https://jamesturk.github.io/projname/"
+repository = "https://github.com/{{ cookiecutter.github_user}}/{{ cookiecutter.project_slug }} /"
+documentation = "https://{{ cookiercutter.github_user}}.github.io/{{ cookiecutter.project_slug }}/"
 classifiers=[
   "Intended Audience :: Developers",
   "License :: OSI Approved :: MIT License",
@@ -18,7 +18,7 @@ classifiers=[
 ]
 
 [tool.poetry.scripts]
-projname = 'projname.cli:cli'
+{{ cookiecutter.project_slug }} = '{{ cookiecutter.project_slug }}.cli:cli'
 
 [tool.poetry.dependencies]
 python = "^3.10"

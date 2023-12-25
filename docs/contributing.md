@@ -2,16 +2,16 @@
 
 ## Issues
 
-Bug reports, questions, or feature requests can be submitted as [GitHub issues](https://github.com/jamesturk/projname/issues).
+Bug reports, questions, or feature requests can be submitted as [GitHub issues](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_slug }}/issues).
 
 ## Developing Locally
 
 0. Before starting, you'll need [poetry](https://python-poetry.org/docs/#installation) installed.
   [pre-commit](https://pre-commit.com/#install) is also recommended.
 
-0. Fork `projname` and check out your fork:
+0. Fork `{{ cookiecutter.project_slug }}` and check out your fork:
   ``` console
-  $ git clone git@github.com:<your username>/projname.git
+  $ git clone git@github.com:<your username>/{{ cookiecutter.project_slug }}.git
   ```
 
 0. Install pre-commit hooks
@@ -20,9 +20,9 @@ Bug reports, questions, or feature requests can be submitted as [GitHub issues](
   ```
   This will make sure that the linters run before each commit, saving you time.
 
-0. Install `projname` and its development dependencies locally:
+0. Install `{{ cookiecutter.project_slug }}` and its development dependencies locally:
   ```
-  $ cd projname
+  $ cd {{ cookiecutter.project_slug }}
   $ poetry install
   ```
 

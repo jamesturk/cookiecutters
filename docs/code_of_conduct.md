@@ -61,7 +61,7 @@ representative at an online or offline event.
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement:
 
-- James Turk: <dev@jamesturk.net>
+- James Turk: <dev@{{ cookiecutter.github_user }}.net>
 
 All complaints will be reviewed and investigated promptly and fairly.
 

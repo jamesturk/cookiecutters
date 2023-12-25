@@ -1,27 +1,27 @@
 # Overview
 
-`projname`: shortdesc
+`{{ cookiecutter.project_slug }}`: shortdesc
 
-Source: [https://github.com/jamesturk/projname](https://github.com/jamesturk/projname)
+Source: [https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_slug }}](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_slug }})
 
-Documentation: [https://jamesturk.github.io/projname/](https://jamesturk.github.io/projname/)
+Documentation: [https://{{ cookiecutter.github_user }}.github.io/{{ cookiecutter.project_slug }}/](https://{{ cookiecutter.github_user }}.github.io/{{ cookiecutter.project_slug }}/)
 
-Issues: [https://github.com/jamesturk/projname/issues](https://github.com/jamesturk/projname/issues)
+Issues: [https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_slug }}/issues](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_slug }}/issues)
 
-[![PyPI badge](https://badge.fury.io/py/projname.svg)](https://badge.fury.io/py/projname)
-[![Test badge](https://github.com/jamesturk/projname/workflows/Test%20&%20Lint/badge.svg)](https://github.com/jamesturk/projname/actions?query=workflow%3A%22Test+%26+Lint%22)
+[![PyPI badge](https://badge.fury.io/py/{{ cookiecutter.project_slug }}.svg)](https://badge.fury.io/py/{{ cookiecutter.project_slug }})
+[![Test badge](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_slug }}/workflows/Test%20&%20Lint/badge.svg)](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_slug }}/actions?query=workflow%3A%22Test+%26+Lint%22)
 
 ## Features
 
 
 ## Installation
 
-`projname` is on [PyPI](https://pypi.org/project/projname/), and can be installed via any standard package management tool:
+`{{ cookiecutter.project_slug }}` is on [PyPI](https://pypi.org/project/{{ cookiecutter.project_slug }}/), and can be installed via any standard package management tool:
 
-    poetry add projname
+    poetry add {{ cookiecutter.project_slug }}
 
 or:
 
-    pip install projname
+    pip install {{ cookiecutter.project_slug }}
 
 ## Example

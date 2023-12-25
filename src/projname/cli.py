@@ -13,8 +13,8 @@ def hello(name: str):
 
 def _version_callback(value: bool):
     if value:
-        version = importlib.metadata.version("projname")
-        typer.echo(f"projname v{version}")
+        version = importlib.metadata.version("{{ cookiecutter.project_slug }}")
+        typer.echo(f"{{ cookiecutter.project_slug }} v{version}")
         raise typer.Exit()
 
 
