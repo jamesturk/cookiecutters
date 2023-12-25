@@ -1,0 +1,12 @@
+test:
+	poetry run pytest --cov=src/ --cov-report html
+
+lint:
+	poetry run ruff src/
+	poetry run ruff format src/
+
+docs:
+	poetry run mkdocs serve
+
+runserver:
+    poetry run python manage.py runserver

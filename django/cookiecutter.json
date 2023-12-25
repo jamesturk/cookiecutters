@@ -4,5 +4,6 @@
     "author": "James Turk",
     "author_email": "dev@jamesturk.net",
     "github_user": "jamesturk",
+    "extra_packages": "Django django-click pytest-django",
     "short_desc": ""
 }

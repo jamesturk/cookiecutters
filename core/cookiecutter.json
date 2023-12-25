@@ -5,5 +5,6 @@
   "author_email": "dev@jamesturk.net",
   "github_user": "jamesturk",
   "short_desc": "",
+  "extra_packages": "typer",
   "cli": "typer"
 }
