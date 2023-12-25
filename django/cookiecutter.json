@@ -4,6 +4,6 @@
     "author": "James Turk",
     "author_email": "dev@jamesturk.net",
     "github_user": "jamesturk",
-    "extra_packages": "Django django-click pytest-django",
+    "extra_packages": "Django django-click pytest-django whitenoise django-debug-toolbar django-environ",
     "short_desc": ""
 }
