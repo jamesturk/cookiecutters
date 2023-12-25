@@ -8,7 +8,7 @@ test:
 
 lint:
 	poetry run ruff src/ tests/
-	poetry run black --check src/ tests/
+	poetry run ruff format src/ tests/
 
 docs:
 	poetry run mkdocs serve
