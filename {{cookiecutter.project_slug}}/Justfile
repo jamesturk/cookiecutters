@@ -1,25 +1,25 @@
+install-base:
+	poetry add --dev pytest pytest-cov black mkdocs-material ruff mypy
+	poetry add structlog
+	{% if cookiecutter.cli == 'typer' -%}poetry add typer{% endif %}
+
 test:
 	poetry run pytest --cov=src/ --cov-report html
 
 lint:
-	poetry run ruff
-	poetry run black --check
+	poetry run ruff src/ tests/
+	poetry run black --check src/ tests/
 
 docs:
 	poetry run mkdocs serve
 
-tutorial_output:
-	poetry run python docs/tutorial_code/v2.py > docs/tutorial_code/v2.log
-	poetry run python docs/tutorial_code/v3.py > docs/tutorial_code/v3.log
-	poetry run python docs/tutorial_code/v5.py > docs/tutorial_code/v5.log
-	poetry run sh docs/tutorial_code/cli.sh > docs/tutorial_code/cli.log
-
 release type:  # patch, minor, major
-	poetry version \{\{type\}\}
+	poetry version {{ '{{' }}type}}
 	poetry build
 	poetry run mkdocs gh-deploy
 	poetry publish
-	git commit -m "release $(poetry version -s)"
-	git tag $(poetry version -s)
+	git commit -am "release $(poetry version -s)"
+	git tag v$(poetry version -s)
+	git push
 	git push --tags
-	# gh release create $(poetry version -s) -F docs/changelog.md
+	gh release create v$(poetry version -s) -F docs/changelog.md

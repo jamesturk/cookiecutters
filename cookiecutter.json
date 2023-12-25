@@ -4,5 +4,6 @@
   "author": "James Turk",
   "author_email": "dev@jamesturk.net",
   "github_user": "jamesturk",
-  "short_desc": "A short description of the project"
+  "short_desc": "",
+  "cli": "typer"
 }

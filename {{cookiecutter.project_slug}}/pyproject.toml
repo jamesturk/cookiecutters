@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "{{ cookiecutter.project_slug }}"
 version = "0.1.0"
-description = "shortdesc"
+description = "{{ cookiecutter.short_desc }}"
 authors = ["{{ cookiecutter.author }} <{{cookiecutter.author_email}}>"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/{{ cookiecutter.github_user}}/{{ cookiecutter.project_slug }} /"
+repository = "https://github.com/{{ cookiecutter.github_user}}/{{ cookiecutter.project_slug }}/"
 documentation = "https://{{ cookiecutter.github_user}}.github.io/{{ cookiecutter.project_slug }}/"
 classifiers=[
   "Intended Audience :: Developers",
@@ -14,29 +14,20 @@ classifiers=[
   "Operating System :: OS Independent",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
   "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
 [tool.poetry.scripts]
+{% if cookiecutter.cli -%}
 {{ cookiecutter.project_slug }} = '{{ cookiecutter.project_slug }}.cli:cli'
+{%- endif %}
 
 [tool.poetry.dependencies]
 python = "^3.10"
-typer = "^0.7.0"
-structlog = "^22.3.0"
 
-[tool.poetry.dev-dependencies]
-pytest = "^7"
-pytest-cov = "^4"
-black = "^23"
-mkdocs-material = "^9"
-ruff = "^0.0.257"
-# mkdocstrings = "^0.19.0"
-# mkdocstrings-python = "^0.8.3"
-# mypy = "^0.900"
-
-# [tool.mypy]
-# disallow_untyped_defs = true
+[tool.mypy]
+disallow_untyped_defs = true
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

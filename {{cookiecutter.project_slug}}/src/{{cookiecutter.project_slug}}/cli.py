@@ -1,3 +1,4 @@
+{%- if cookiecutter.cli == "typer" -%}
 import importlib.metadata
 import logging
 import structlog
@@ -38,6 +39,9 @@ def main(
     structlog.configure(
         wrapper_class=structlog.make_filtering_bound_logger(log_level),
     )
+
+
+{%- endif %}
 
 
 if __name__ == "__main__":
