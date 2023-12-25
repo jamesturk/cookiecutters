@@ -6,7 +6,7 @@ authors = ["{{ cookiecutter.author }} <{{cookiecutter.author_email}}>"]
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/{{ cookiecutter.github_user}}/{{ cookiecutter.project_slug }} /"
-documentation = "https://{{ cookiercutter.github_user}}.github.io/{{ cookiecutter.project_slug }}/"
+documentation = "https://{{ cookiecutter.github_user}}.github.io/{{ cookiecutter.project_slug }}/"
 classifiers=[
   "Intended Audience :: Developers",
   "License :: OSI Approved :: MIT License",

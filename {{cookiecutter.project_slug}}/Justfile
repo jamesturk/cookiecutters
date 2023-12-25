@@ -15,7 +15,7 @@ tutorial_output:
 	poetry run sh docs/tutorial_code/cli.sh > docs/tutorial_code/cli.log
 
 release type:  # patch, minor, major
-	poetry version {{type}}
+	poetry version \{\{type\}\}
 	poetry build
 	poetry run mkdocs gh-deploy
 	poetry publish

@@ -3,5 +3,6 @@
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
   "author": "James Turk",
   "author_email": "dev@jamesturk.net",
-  "github_user": "jamesturk"
+  "github_user": "jamesturk",
+  "short_desc": "A short description of the project"
 }

@@ -2,7 +2,7 @@ site_name: {{ cookiecutter.project_slug }}
 site_url: https://{{ cookiecutter.github_user }}.github.io/{{ cookiecutter.project_slug }}/
 site_author: {{ cookiecutter.author }}
 site_description: shortdesc
-copyright: Copyright &copy; 2023 {{ cookiecuter.author }}
+copyright: Copyright &copy; 2023 {{ cookiecutter.author }}
 repo_url: https://github.com/{{ cookiecutter.github_user}}/{{ cookiecutter.project_slug}}
 repo_name: {{ cookiecutter.github_user }}/{{ cookiecutter.project_slug }}
 edit_uri: edit/main/docs/
