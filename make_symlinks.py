@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+""" Helper script that copies things from _common to the cookiecutter root """
+
 import pathlib
 
 cookies = ["core", "django"]

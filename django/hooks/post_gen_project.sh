@@ -4,6 +4,8 @@
 poetry add --dev pytest pytest-cov mkdocs-material ruff mypy
 poetry add structlog
 poetry add typer
+poetry add Django django-click pytest-django
 
 git init
+git commit -am "cookiecutter: initial commit"
 pre-commit install

@@ -6,4 +6,5 @@ poetry add structlog
 poetry add typer
 
 git init
+git commit -am "cookiecutter: initial commit"
 pre-commit install
