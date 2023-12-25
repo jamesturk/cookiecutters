@@ -1,1 +1,25 @@
-../../_common/pyproject.toml
+[tool.poetry]
+name = "{{ cookiecutter.project_slug }}"
+version = "0.1.0"
+description = "{{ cookiecutter.short_desc }}"
+authors = ["{{ cookiecutter.author }} <{{cookiecutter.author_email}}>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/{{ cookiecutter.github_user}}/{{ cookiecutter.project_slug }}/"
+documentation = "https://{{ cookiecutter.github_user}}.github.io/{{ cookiecutter.project_slug }}/"
+classifiers=[
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
