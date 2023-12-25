@@ -10,3 +10,4 @@ git init
 git add .
 git commit -m "cookiecutter commit"
 pre-commit install
+poetry install
