@@ -8,11 +8,11 @@ cli = typer.Typer()
 
 
 @cli.command()
-def hello(name: str):
+def hello(name: str) -> None:
     print(f"Hello {name}")
 
 
-def _version_callback(value: bool):
+def _version_callback(value: bool) -> None:
     if value:
         version = importlib.metadata.version("{{ cookiecutter.project_slug }}")
         typer.echo(f"{{ cookiecutter.project_slug }} v{version}")
@@ -32,7 +32,7 @@ def main(
     verbosity: int = typer.Option(
         0, "-v", "--verbose", count=True, help="Verbosity level 0-2"
     ),
-):
+) -> None:
     log_level = {0: logging.WARNING, 1: logging.INFO, 2: logging.DEBUG}.get(
         verbosity, logging.DEBUG
     )

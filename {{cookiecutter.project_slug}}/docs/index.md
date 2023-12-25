@@ -1,6 +1,6 @@
 # Overview
 
-`{{ cookiecutter.project_slug }}`: shortdesc
+`{{ cookiecutter.project_slug }}`: {{ cookiecutter.short_desc }}
 
 Source: [https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_slug }}](https://github.com/{{ cookiecutter.github_user }}/{{ cookiecutter.project_slug }})
 
