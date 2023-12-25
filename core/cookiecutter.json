@@ -1,0 +1,9 @@
+{
+  "project_name": "jpt-package",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "author": "James Turk",
+  "author_email": "dev@jamesturk.net",
+  "github_user": "jamesturk",
+  "short_desc": "",
+  "cli": "typer"
+}

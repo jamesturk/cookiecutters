@@ -1,9 +1,14 @@
 {
-  "project_name": "jpt-package",
-  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-  "author": "James Turk",
-  "author_email": "dev@jamesturk.net",
-  "github_user": "jamesturk",
-  "short_desc": "",
-  "cli": "typer"
+    "templates": {
+        "core": {
+            "path": "./core",
+            "title": "Python Package",
+            "description": "Standard Python Package"
+        },
+        "package": {
+            "path": "./django",
+            "title": "Django Project",
+            "description": "Standard Django App"
+        }
+    }
 }
